@@ -4,6 +4,7 @@ import { PrimeNGConfig } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { Lara } from 'primeng/themes/lara';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,10 +19,6 @@ export class AppComponent {
       preset: Lara,
       options: {
         darkModeSelector: '.dark-mode',
-        cssLayer: {
-          name: 'primeng',
-          order: 'tailwind-base, primeng, tailwind-utilities',
-        },
       },
     });
     this.config.ripple.set(true);
